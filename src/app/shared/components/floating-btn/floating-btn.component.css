@@ -1,0 +1,11 @@
+.floating-btn {
+    
+    border-radius: 100;
+    color: white;
+    font-size: 15;
+    font-weight: bold;
+}
+
+.floating-btn:hover {
+    background: tomato;
+}

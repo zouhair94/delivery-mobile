@@ -1,0 +1,96 @@
+
+
+<FlexboxLayout 
+  
+ flexDirection="column" 
+ backgroundColor="#3c495e">
+
+  
+
+  <StackLayout height="50%">
+    <GridLayout height="80" rows="*" columns="*,auto,*" backgroundColor="#3c495e">
+      <Label col="1" row="0" class="title" verticalAlignment="center" horizontalAlignment="center" text="Home Page"
+        fontSize="20"></Label>
+    </GridLayout>
+
+    <ng-container>
+      <GridLayout height="250" backgroundColor="#ffffff">
+        <Image src="~/assets/images/logo.png"></Image>
+
+      </GridLayout>
+    </ng-container>
+    <GridLayout class="separator" height="40"></GridLayout>  
+  </StackLayout>
+
+  <AbsoluteLayout backgroundColor="#3c495e" height="60%" id="absolute">
+
+
+    <ng-container>
+      <floating-btn id="fab"  [widthVal]="'63'" [heightVal]="'63'" (tap)="click()"></floating-btn>
+    </ng-container>
+
+      <ScrollView backgroundColor="#3c495e" id="scroll" class="verticalScroll" >
+        <StackLayout>
+          <Label text="Orders" class="title" margin="20 20 0 20" fontSize="20"></Label>
+          <ng-container>
+            <ScrollView orientation="horizontal" class="verticalScroll">
+              <StackLayout orientation="horizontal" padding="10 20">
+                <ng-container *ngFor="let order of orders">
+                  <GridLayout width="120" height="100" columns="*" rows="*" marginRight="10">
+                    <Image src="~/assets/images/cargo.png" stretch="aspectFill" backgroundColor="#ffffff" borderRadius="10">
+                    </Image>
+                    <ContentView borderRadius="10" backgroundColor="#ffffff" opacity="0.5"></ContentView>
+                    <Label [text]="order.title" color="#3c495e" class="orders" verticalAlignment="center"
+                      horizontalAlignment="center"></Label>
+    
+                  </GridLayout>
+                </ng-container>
+              </StackLayout>
+            </ScrollView>
+          </ng-container>
+          <Label text="Addresses List" class="title" margin="20 20 0 20" fontSize="20"></Label>
+          <ng-container>
+            <ScrollView orientation="horizontal">
+              <StackLayout orientation="horizontal" padding="10 20">
+                <ng-container *ngFor="let adress of adresses">
+                  <GridLayout width="120" height="100" columns="*" rows="*" marginRight="10">
+                    <Image src="~/assets/images/adress.png" backgroundColor="#ffffff" borderRadius="10" ></Image>
+                    <ContentView borderRadius="10" backgroundColor="#ffffff" opacity="0.5"></ContentView>
+                    <Label [text]="adress.title" color="#3c495e" class="orders" verticalAlignment="center"
+                      horizontalAlignment="center"></Label>
+    
+                  </GridLayout>
+                </ng-container>
+              </StackLayout>
+            </ScrollView>
+          </ng-container>
+          <Label text="Settings" class="title" margin="20 20 0 20" fontSize="20"></Label>
+          <ng-container>
+            <ScrollView orientation="horizontal">
+              <StackLayout orientation="horizontal" padding="10 20">
+                <ng-container *ngFor="let set of settings">
+                  <GridLayout width="120" height="100" columns="*" rows="*" marginRight="10">
+                    <Image [src]="set.img" backgroundColor="#ffffff" borderRadius="10" [nsRouterLink]="[set.route]"></Image>
+                    <ContentView borderRadius="10" backgroundColor="#ffffff" opacity="0.5"></ContentView>
+                    <Label [text]="set.title" color="#3c495e" class="orders" verticalAlignment="center"
+                      horizontalAlignment="center"></Label>
+    
+                  </GridLayout>
+                </ng-container>
+              </StackLayout>
+            </ScrollView>
+          </ng-container>
+          
+        </StackLayout>
+    
+      </ScrollView>
+      <GridLayout width="80%" id="menu"  >
+        <ng-container>
+          <floating-menu [disp]="addMenu"></floating-menu>
+        </ng-container>
+      </GridLayout>
+    
+  </AbsoluteLayout>
+  
+  
+</FlexboxLayout>

@@ -1,0 +1,35 @@
+.home {
+
+}
+
+.title{
+    color:orange;
+    font-weight: bold;
+}
+
+.box{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.orders{
+    font-weight: bold;
+    font-size: 20;
+}
+
+.separator{
+    background-color: #FFFFFF;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 25%);
+}
+.verticalScroll{
+    height:100%;
+    width: 100%
+}
+#menu {
+    margin: 65% 10%; 
+}
+#fab{
+    margin-top: 90%;
+    margin-left: 50%;
+}
+
+

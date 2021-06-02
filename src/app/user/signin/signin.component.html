@@ -1,0 +1,41 @@
+<FlexboxLayout flexDirection="column" backgroundColor="#3c495e">
+
+    <StackLayout  height="15%">
+  
+      <Image class="logo" src="res://logo" stretch="none" decodeWidth="70%" decodeHeight="70%">
+      </Image>
+      
+    </StackLayout>
+  
+  
+  
+    <GridLayout class="separator" height="60">
+    </GridLayout>
+    <StackLayout height='65%' class="login"  orientation="vertical">
+  
+      <StackLayout height="15%"></StackLayout>
+      <StackLayout height="75%" class="login" >
+        
+        <TextField hint="Name" class="login-field "  [text]="name"></TextField>
+        <TextField hint="Surname" class="login-field "  [text]="surname"></TextField>
+        <TextField hint="ID Number" class="login-field "  [text]="id"></TextField>
+        <TextField hint="Company ID Number" class="login-field "  [text]="cid"></TextField>
+        <TextField hint="Phone" class="login-field " keyboardType="phone"  [text]="phone"></TextField>
+        <TextField hint="E-mail" class="login-field " keyboardType="email" [text]="email"></TextField>
+        <TextField hint="Password" class="login-field" secure="true" [text]="password"></TextField>
+        <button text="Sign Up" class="button login-field" ></button>
+        <label text="Sign-In" class="signup" [nsRouterLink]="['/user/login']" ></label>
+  
+      </StackLayout>
+      <StackLayout height="10%"></StackLayout>
+  
+  
+    </StackLayout>
+  
+    <StackLayout height='10%' >
+      <GridLayout class="separator2" height="50" verticalAlignment="top">
+      </GridLayout>
+    </StackLayout>
+  
+  
+  </FlexboxLayout>

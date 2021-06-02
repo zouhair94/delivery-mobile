@@ -1,0 +1,38 @@
+<FlexboxLayout flexDirection="column" backgroundColor="#3c495e">
+
+  <StackLayout  height="35%">
+
+    <Image class="logo" src="res://logo" stretch="none" decodeWidth="100%" decodeHeight="100%">
+    </Image>
+    
+  </StackLayout>
+
+
+  <ActivityIndicator [busy]="isBusy" >
+  </ActivityIndicator>
+
+  <GridLayout class="separator" height="60">
+  </GridLayout>
+  <StackLayout height='35%' class="login"  orientation="vertical">
+
+    <StackLayout height="15%"></StackLayout>
+    <StackLayout height="75%" class="login" >
+
+      <TextField hint="E-mail" [(ngModel)]="userData.mail" class="login-field " keyboardType="email" returnKeyType="done" ></TextField>
+      <TextField hint="Password" class="login-field" secure="true" [(ngModel)]="userData.password" returnKeyType="done"></TextField>
+      <button text="login" class="button login-field" (tap)="submit()"></button>
+      <label text="Sign-Up" class="signup" [nsRouterLink]="['/user/signup' ]" ></label>
+
+    </StackLayout>
+    <StackLayout height="10%"></StackLayout>
+
+
+  </StackLayout>
+
+  <StackLayout height='30%' >
+    <GridLayout class="separator2" height="50" verticalAlignment="top">
+    </GridLayout>
+  </StackLayout>
+
+
+</FlexboxLayout>

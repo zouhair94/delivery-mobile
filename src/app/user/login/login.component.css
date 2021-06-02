@@ -1,0 +1,41 @@
+.logo{
+    margin-top: 100;
+    horizontal-align: center;
+    vertical-align: center;
+}
+.login {
+    background-color: #ffffff;
+/*     margin: 20;
+    padding-top: 20;
+    border-radius: 50%; */
+}
+
+.login-field{
+    margin: 10 55 5 55;
+}
+
+.separator{
+    vertical-align: bottom;
+    background-color: #ffffff;
+    clip-path: polygon(0 75%, 100% 25%, 100% 100%, 0 100%);
+}
+
+.separator2{
+    background-color: #FFFFFF;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 25%);
+}
+.button {
+    color: white;
+    background-color: darkorange;
+}
+
+.here{
+    color: #01618B;
+    margin: 0 10 0 10;
+}
+.signup{
+    color: orange;
+    font-weight: bold;
+    margin: 20 165 5 160;
+    border-bottom: orange solid 1px;
+}
