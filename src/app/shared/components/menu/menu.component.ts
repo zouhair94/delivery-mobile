@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Page } from '@nativescript/core';
+import { RouterExtensions } from '@nativescript/angular'
 
 @Component({
 	moduleId: module.id,
@@ -12,7 +13,11 @@ export class MenuComponent implements OnInit {
 
 	@Input() disp = true;
 	
-	constructor() { }
+	constructor(private router: RouterExtensions) { }
 
 	ngOnInit() { }
+
+	addNewAdress() {
+		this.router.navigateByUrl('/address/new')
+	}
 }

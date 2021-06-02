@@ -1,9 +1,10 @@
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core'
+import { NativeScriptCommonModule, NativeScriptFormsModule } from '@nativescript/angular'
 import { AdressRouteModule } from './adress-route.module'
 import { NewComponent } from './new/new.component'
 
 @NgModule({
-    imports:[AdressRouteModule],
+    imports:[AdressRouteModule, NativeScriptCommonModule, NativeScriptFormsModule],
     exports:[],
     declarations:[NewComponent],
     schemas: [NO_ERRORS_SCHEMA]

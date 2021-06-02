@@ -15,6 +15,9 @@ export class NewComponent implements OnInit {
 	constructor() { }
 
 	ngOnInit() { 
-		
+		this.adress.title = ""
+		this.adress.address = ""
+		this.adress.province = "Casablanca"
+		this.adress.city = "Casablanca"
 	}
 }

@@ -1,30 +1,46 @@
 <GridLayout
     backgroundColor="#3c495e"
+    cols = "10% auto, 10%"
+    rows="20%,160,auto,20%"
 >
+    
+    <GridLayout class="form" col="1" row="2" rows="40,40,40,40,40,40">
+        <TextField
+        hint="Address Name"
+        [(ngModel)]="adress.title"
+        row="0"
+        >
+        </TextField>
 
-<TextField
-  hint="Address Name"
-  [(ngModel)]="adress.title"
->
-</TextField>
+        <TextField
+        hint="Adress"
+        [(ngModel)]="adress.address"
+        row="1"
+        >
+        </TextField>
 
-<TextField
-  hint="Adress"
-  [(ngModel)]="adress.address"
+        <TextField
+        hint="Province"
+        [(ngModel)]="adress.province"
+        row="2"
+        >
+        </TextField>
 
->
-</TextField>
+        <TextField
+        hint="City"
+        [(ngModel)]="adress.city"
+        row="3"
+        >
+        </TextField>
+        <button text="Check Address" backgroundColor="green" row="4"></button>
+        <button text="Check Address" backgroundColor="orange" row="5"></button>
+    </GridLayout>
 
-<TextField
-  hint="Province"
-  [(ngModel)]="adress.province"
->
-</TextField>
+    <GridLayout class="avatar" col="1" row="1" columns="*" rows="*" >
+        <Image src="~/assets/images/adress.png" backgroundColor="#ffffff" borderRadius="25%" ></Image>
+    </GridLayout>
 
-<TextField
-  hint="Province"
-  [(ngModel)]="adress.city"
->
-</TextField>
+
+ 
 
 </GridLayout>

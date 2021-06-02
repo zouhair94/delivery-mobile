@@ -22,7 +22,7 @@ const routes: Routes = [
 
 @NgModule({
     imports: [NativeScriptRouterModule.forChild(routes)],
-    declarations: [],
+    exports: [NativeScriptRouterModule],
     schemas: [NO_ERRORS_SCHEMA]
 })
 export class AdressRouteModule { }
