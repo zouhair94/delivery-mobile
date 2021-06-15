@@ -1,10 +1,11 @@
 <GridLayout
     backgroundColor="#3c495e"
     cols = "10% auto, 10%"
-    rows="20%,160,auto,20%"
+    rows="80,200,160,auto,10%"
+    margin="0"
 >
     
-    <GridLayout class="form" col="1" row="2" rows="40,40,40,40,40,40">
+    <GridLayout class="form" col="1" row="3" rows="40,40,40,40,40,40">
         <TextField
         hint="Address Name"
         [(ngModel)]="adress.title"
@@ -36,11 +37,34 @@
         <button text="Check Address" backgroundColor="orange" row="5"></button>
     </GridLayout>
 
-    <GridLayout class="avatar" col="1" row="1" columns="*" rows="*" >
+    <GridLayout class="avatar" col="1" row="2" columns="*" rows="*" >
         <Image src="~/assets/images/adress.png" backgroundColor="#ffffff" borderRadius="25%" ></Image>
     </GridLayout>
 
+    <GridLayout row="1" col="0" colsPan="3" cols="*" rows="*" backgroundColor="orange">
+        <GridLayout row="2" col="0">
+            <Mapbox
+            #map
+            accessToken="pk.eyJ1Ijoiem91aGFpcjk0IiwiYSI6ImNrcGd1bXk5MDA2cWUydXBtMWdvOTVsM3QifQ.hinqS9M9vWd0L7g__N-I8g"
+            mapStyle="traffic_day"
+            latitude="-6.21462"
+            longitude="106.84513"
+            hideCompass="true"
+            zoomLevel="14"
+            showUserLocation="true"
+            disableZoom="false"
+            disableRotation="false"
+            disableScroll="false"
+            disableTilt="false"
+            (mapReady)="onMapReady($event)">
+        </Mapbox> 
+        </GridLayout>
+  
+    </GridLayout>
+    <GridLayout row="0" col="0" colsPan="3" cols="*" rows="*"  backgroundColor="#3c495e">
 
- 
+            <label text="Add new Adress" ></label>
+
+    </GridLayout>
 
 </GridLayout>

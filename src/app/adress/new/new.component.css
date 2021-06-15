@@ -29,3 +29,17 @@ button{
     padding: 10 ;
     color:white;
 }
+
+Label {
+    margin-top: 25;
+    text-align: center;
+    font-size: 24;
+    font-weight: bold;
+    color: orange;
+}
+
+.mapBar{
+    padding: 10%;
+    width: 100%;
+    height: 100%;
+}

@@ -1,10 +1,12 @@
-import {FloatingBtnComponent} from './floating-btn/floating-btn.component';
-import {MenuComponent} from './menu/menu.component'
+import { FloatingBtnComponent } from '@/app/shared/components/floating-btn/floating-btn.component';
+import { MenuComponent } from '@/app/shared/components/menu/menu.component';
+
+
 
 export const components = [
     FloatingBtnComponent,
-    MenuComponent
+    MenuComponent,
 ];
 
-export *  from './floating-btn/floating-btn.component';
-export * from './menu/menu.component';
+export *  from '@/app/shared/components/floating-btn/floating-btn.component';
+export * from '@/app/shared/components/menu/menu.component';
