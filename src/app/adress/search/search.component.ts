@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Page, SearchBar,  ScrollView } from '@nativescript/core';
 
 @Component({
 	moduleId: module.id,
@@ -9,7 +10,11 @@ import { Component, OnInit } from '@angular/core';
 
 export class SearchComponent implements OnInit {
 
-	constructor() { }
+	searchPhrase: string
 
-	ngOnInit() { }
+	constructor(private page: Page) { }
+
+	ngOnInit() {
+		this.page.actionBarHidden = true;
+	 }
 }

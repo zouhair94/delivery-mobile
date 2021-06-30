@@ -5,7 +5,7 @@
 .form{
     background: whitesmoke;
     padding: 40% 20% 20% 20%;
-    margin: -20% 10% 20% 10%;
+    margin: -60% 10% 20% 10%;
     border-width: 5px;
     border-color: transparent;
     border-radius: 5%;
@@ -16,12 +16,13 @@
     background: white;
     border-color: orange;
     border-width: 5;
-    width: 30%;
-    height: 30%;
-    margin-bottom: -40;
+    width: 70;
+    height: 70;
+    margin-bottom: -100;
 }
-TextFiled{
-    margin-bottom: 50;
+
+.login-field{
+    margin: 10 5 5 5;
 }
 
 button{
@@ -37,6 +38,7 @@ Label {
     font-weight: bold;
     color: orange;
 }
+
 
 .mapBar{
     padding: 10%;

@@ -8,9 +8,6 @@
   </StackLayout>
 
 
-  <ActivityIndicator [busy]="true" >
-  </ActivityIndicator>
-
   <GridLayout class="separator" height="60">
   </GridLayout>
   <StackLayout height='35%' class="login"  orientation="vertical">
@@ -18,7 +15,7 @@
     <StackLayout height="15%"></StackLayout>
     <StackLayout height="75%" class="login" >
 
-      <TextField hint="E-mail" [(ngModel)]="userData.mail" class="login-field " keyboardType="email" returnKeyType="done" ></TextField>
+      <TextField hint="E-mail" [(ngModel)]="userData.mail" class="login-field " keyboardType="email" returnKeyType="next" ></TextField>
       <TextField hint="Password" class="login-field" secure="true" [(ngModel)]="userData.password" returnKeyType="done"></TextField>
       <button text="login" class="button login-field" (tap)="submit()"></button>
       <label text="Sign-Up" class="signup" [nsRouterLink]="['/user/signup' ]" ></label>

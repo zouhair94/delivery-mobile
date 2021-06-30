@@ -1,1 +1,47 @@
-<Label class="search" text="Hello SearchComponent!"></Label>
+<GridLayout
+    backgroundColor="#3c495e"
+    rows="80,auto"
+    >
+    <GridLayout row="0" cols="*" rows="*"  backgroundColor="#3c495e">
+
+        <label text="Search in address list" ></label>
+
+    </GridLayout>
+    <GridLayout rows="60,auto" row="1">
+        
+        <SearchBar hint="Search"
+            row="0" 
+           >
+        </SearchBar>
+
+        <ScrollView
+            (scroll)="onScroll($event)"
+            backgroundColor="#3c495e"
+            class="verticalScroll"
+            row="1"
+            >
+            <StackLayout>
+                <ng-container>
+                    <GridLayout rows="200 200 200 200 200 200 200 200 200 200">
+                        <label row="0" text="Some row content goes here..."></label>
+                        <label row="1" text="Some row content goes here..."></label>
+                        <label row="2" text="Some row content goes here..."></label>
+                        <label row="3" text="Some row content goes here..."></label>
+                        <label row="4" text="Some row content goes here..."></label>
+                        <label row="5" text="Some row content goes here..."></label>
+                        <label row="6" text="Some row content goes here..."></label>
+                        <label row="7" text="Some row content goes here..."></label>
+                        <label row="8" text="Some row content goes here..."></label>
+                        <label row="9" text="Some row content goes here..."></label>
+                      </GridLayout>
+                </ng-container>
+            </StackLayout>
+            
+          </ScrollView>
+          
+
+    </GridLayout>
+    
+
+
+</GridLayout>

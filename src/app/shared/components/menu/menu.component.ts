@@ -20,4 +20,8 @@ export class MenuComponent implements OnInit {
 	addNewAdress() {
 		this.router.navigateByUrl('/address/new')
 	}
+
+	searchAdressPage() {
+		this.router.navigateByUrl('/address/search');
+	}
 }
