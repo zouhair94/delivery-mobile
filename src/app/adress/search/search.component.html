@@ -4,10 +4,14 @@
     >
     <GridLayout row="0" cols="*" rows="*"  backgroundColor="#3c495e">
 
-        <label text="Search in address list" ></label>
+        <label class="Page-title" [text]="title" ></label>
 
     </GridLayout>
-    <GridLayout rows="60,auto" row="1">
+    <GridLayout
+     rows="60,auto"
+     row="1"
+     height="90%"
+     >
         
         <SearchBar hint="Search"
             row="0" 
@@ -15,25 +19,193 @@
         </SearchBar>
 
         <ScrollView
-            (scroll)="onScroll($event)"
             backgroundColor="#3c495e"
             class="verticalScroll"
             row="1"
+            marginTop="20dpi"
             >
             <StackLayout>
                 <ng-container>
-                    <GridLayout rows="200 200 200 200 200 200 200 200 200 200">
-                        <label row="0" text="Some row content goes here..."></label>
-                        <label row="1" text="Some row content goes here..."></label>
-                        <label row="2" text="Some row content goes here..."></label>
-                        <label row="3" text="Some row content goes here..."></label>
-                        <label row="4" text="Some row content goes here..."></label>
-                        <label row="5" text="Some row content goes here..."></label>
-                        <label row="6" text="Some row content goes here..."></label>
-                        <label row="7" text="Some row content goes here..."></label>
-                        <label row="8" text="Some row content goes here..."></label>
-                        <label row="9" text="Some row content goes here..."></label>
-                      </GridLayout>
+                   <GridLayout
+                    columns="60,*,80"
+                    class="cards"
+                    androidElevation="12"
+                    >
+                        <StackLayout class="avatar" col="0">
+                            <Label text="Z" class="avatar-text"></Label>
+                        </StackLayout>
+                        <label text="selamdbfkjdsbkjb dksjbfk jsdbkjfbdskjb" col="1" class="title"></label>
+                        <GridLayout col="2" columns="auto,auto" class="icons">
+                            <Label text="&#xff044;"  fontSize="30dpi" class="fa" marginLeft="5" marginRight="5" col="0"></Label>
+                            <Label text="&#xff2ed;" fontSize="30dpi" color="red" class="fa" col="1"></Label>
+                           
+                        </GridLayout>
+                   </GridLayout>
+                   <GridLayout
+                    columns="60,*,60"
+                    class="cards"
+                    androidElevation="12"
+                    >
+                        <StackLayout class="avatar" col="0">
+                            <Label text="Z" class="avatar-text"></Label>
+                        </StackLayout>
+                        <label text="selam" col="1" class="title"></label>
+                        <GridLayout col="2" columns="auto,auto" class="icons">
+                            <Label text="&#xff044;"  fontSize="20dpi" class="fa" col="0"></Label>
+                            <Label text="&#xff2ed;" fontSize="20dpi" color="red" class="fa" col="1"></Label>
+                           
+                        </GridLayout>
+                   </GridLayout>
+                   <GridLayout
+                    columns="60,*,60"
+                    class="cards"
+                    androidElevation="12"
+                    >
+                        <StackLayout class="avatar" col="0">
+                            <Label text="Z" class="avatar-text"></Label>
+                        </StackLayout>
+                        <label text="selam" col="1" class="title"></label>
+                        <GridLayout col="2" columns="auto,auto" class="icons">
+                            <Label text="&#xff044;"  fontSize="20dpi" class="fa" col="0"></Label>
+                            <Label text="&#xff2ed;" fontSize="20dpi" color="red" class="fa" col="1"></Label>
+                           
+                        </GridLayout>
+                   </GridLayout>
+                   <GridLayout
+                    columns="60,*,60"
+                    class="cards"
+                    androidElevation="12"
+                    >
+                        <StackLayout class="avatar" col="0">
+                            <Label text="Z" class="avatar-text"></Label>
+                        </StackLayout>
+                        <label text="selam" col="1" class="title"></label>
+                        <GridLayout col="2" columns="auto,auto" class="icons">
+                            <Label text="&#xff044;"  fontSize="20dpi" class="fa" col="0"></Label>
+                            <Label text="&#xff2ed;" fontSize="20dpi" color="red" class="fa" col="1"></Label>
+                           
+                        </GridLayout>
+                   </GridLayout>
+                   <GridLayout
+                    columns="60,*,60"
+                    class="cards"
+                    androidElevation="12"
+                    >
+                        <StackLayout class="avatar" col="0">
+                            <Label text="Z" class="avatar-text"></Label>
+                        </StackLayout>
+                        <label text="selam" col="1" class="title"></label>
+                        <GridLayout col="2" columns="auto,auto" class="icons">
+                            <Label text="&#xff044;"  fontSize="20dpi" class="fa" col="0"></Label>
+                            <Label text="&#xff2ed;" fontSize="20dpi" color="red" class="fa" col="1"></Label>
+                           
+                        </GridLayout>
+                   </GridLayout>
+                   <GridLayout
+                    columns="60,*,60"
+                    class="cards"
+                    androidElevation="12"
+                    >
+                        <StackLayout class="avatar" col="0">
+                            <Label text="Z" class="avatar-text"></Label>
+                        </StackLayout>
+                        <label text="selam" col="1" class="title"></label>
+                        <GridLayout col="2" columns="auto,auto" class="icons">
+                            <Label text="&#xff044;"  fontSize="20dpi" class="fa" col="0"></Label>
+                            <Label text="&#xff2ed;" fontSize="20dpi" color="red" class="fa" col="1"></Label>
+                           
+                        </GridLayout>
+                   </GridLayout>
+                   <GridLayout
+                    columns="60,*,60"
+                    class="cards"
+                    androidElevation="12"
+                    >
+                        <StackLayout class="avatar" col="0">
+                            <Label text="Z" class="avatar-text"></Label>
+                        </StackLayout>
+                        <label text="selam" col="1" class="title"></label>
+                        <GridLayout col="2" columns="auto,auto" class="icons">
+                            <Label text="&#xff044;"  fontSize="20dpi" class="fa" col="0"></Label>
+                            <Label text="&#xff2ed;" fontSize="20dpi" color="red" class="fa" col="1"></Label>
+                           
+                        </GridLayout>
+                   </GridLayout>
+                   <GridLayout
+                    columns="60,*,60"
+                    class="cards"
+                    androidElevation="12"
+                    >
+                        <StackLayout class="avatar" col="0">
+                            <Label text="Z" class="avatar-text"></Label>
+                        </StackLayout>
+                        <label text="selam" col="1" class="title"></label>
+                        <GridLayout col="2" columns="auto,auto" class="icons">
+                            <Label text="&#xff044;"  fontSize="20dpi" class="fa" col="0"></Label>
+                            <Label text="&#xff2ed;" fontSize="20dpi" color="red" class="fa" col="1"></Label>
+                           
+                        </GridLayout>
+                   </GridLayout>
+                   <GridLayout
+                    columns="60,*,60"
+                    class="cards"
+                    androidElevation="12"
+                    >
+                        <StackLayout class="avatar" col="0">
+                            <Label text="Z" class="avatar-text"></Label>
+                        </StackLayout>
+                        <label text="selam" col="1" class="title"></label>
+                        <GridLayout col="2" columns="auto,auto" class="icons">
+                            <Label text="&#xff044;"  fontSize="20dpi" class="fa" col="0"></Label>
+                            <Label text="&#xff2ed;" fontSize="20dpi" color="red" class="fa" col="1"></Label>
+                           
+                        </GridLayout>
+                   </GridLayout>
+                   <GridLayout
+                    columns="60,*,60"
+                    class="cards"
+                    androidElevation="12"
+                    >
+                        <StackLayout class="avatar" col="0">
+                            <Label text="Z" class="avatar-text"></Label>
+                        </StackLayout>
+                        <label text="selam" col="1" class="title"></label>
+                        <GridLayout col="2" columns="auto,auto" class="icons">
+                            <Label text="&#xff044;"  fontSize="20dpi" class="fa" col="0"></Label>
+                            <Label text="&#xff2ed;" fontSize="20dpi" color="red" class="fa" col="1"></Label>
+                           
+                        </GridLayout>
+                   </GridLayout>
+                   <GridLayout
+                    columns="60,*,60"
+                    class="cards"
+                    androidElevation="12"
+                    >
+                        <StackLayout class="avatar" col="0">
+                            <Label text="Z" class="avatar-text"></Label>
+                        </StackLayout>
+                        <label text="selam" col="1" class="title"></label>
+                        <GridLayout col="2" columns="auto,auto" class="icons">
+                            <Label text="&#xff044;"  fontSize="20dpi" class="fa" col="0"></Label>
+                            <Label text="&#xff2ed;" fontSize="20dpi" color="red" class="fa" col="1"></Label>
+                           
+                        </GridLayout>
+                   </GridLayout>
+                   <GridLayout
+                    columns="60,*,60"
+                    class="cards"
+                    androidElevation="12"
+                    >
+                        <StackLayout class="avatar" col="0">
+                            <Label text="Z" class="avatar-text"></Label>
+                        </StackLayout>
+                        <label text="selam" col="1" class="title"></label>
+                        <GridLayout col="2" columns="auto,auto" class="icons">
+                            <Label text="&#xff044;"  fontSize="20dpi" class="fa" col="0"></Label>
+                            <Label text="&#xff2ed;" fontSize="20dpi" color="red" class="fa" col="1"></Label>
+                           
+                        </GridLayout>
+                   </GridLayout>
                 </ng-container>
             </StackLayout>
             

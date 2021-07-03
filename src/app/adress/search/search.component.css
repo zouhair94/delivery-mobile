@@ -2,15 +2,57 @@
 
 }
 
-Label {
-    margin-top: 25;
+.Page-title{
+    margin-top: 25dpi;
     text-align: center;
-    font-size: 24;
+    font-size: 24dpi;
     font-weight: bold;
     color: orange;
 }
 
 .verticalScroll{
-    height:100%;
+    height:90%;
     width: 100%
 }
+
+.cards{
+    margin: 5dpi;
+    width: 95%;
+    height: 120dpi;
+    background: #ffffff;
+    border-radius: 10%;
+}
+
+.avatar{
+    margin-left: 15dpi;
+    width:60dpi;
+    height:60dpi;
+    background: #3c495e;
+    border-radius: 50%;
+    border-color: orange;
+    border-width: 5dpi;
+}
+
+.avatar-text{
+    text-align: center;
+    margin-top: 4dpi;
+    font-size: 24dpi;
+    font-weight: bold;
+    color: orange;
+}
+.title{
+    
+    color: #3c495e;
+    font-size: 30dpi;
+    text-align: center;
+    margin-left: 20dpi;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.icons{
+    color: orange;
+    vertical-align: middle;
+    font-weight: bold;
+}
+ 
+

@@ -15,10 +15,10 @@
     border-radius: 25%;
     background: white;
     border-color: orange;
-    border-width: 5;
-    width: 70;
-    height: 70;
-    margin-bottom: -100;
+    border-width: 5dpi;
+    width: 70dpi;
+    height: 70dpi;
+    margin-bottom: -100dpi;
 }
 
 .login-field{
