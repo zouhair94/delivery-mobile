@@ -7,7 +7,9 @@ import { AddComponent } from './add/add.component';
 @NgModule({
     
     imports: [
-        OrderRouteModule, NativeScriptCommonModule, NativeScriptFormsModule,
+                OrderRouteModule,
+                NativeScriptCommonModule,
+                NativeScriptFormsModule,
             ],
     declarations: [MainComponent, AddComponent],
     providers: [],

@@ -22,6 +22,6 @@ export class MenuComponent implements OnInit {
 	}
 
 	searchAdressPage() {
-		this.router.navigateByUrl('/address/search');
+		this.router.navigateByUrl('/order');
 	}
 }

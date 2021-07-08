@@ -1,1 +1,42 @@
-<Label class="add" text="Hello AddComponent!"></Label>
+<GridLayout 
+     backgroundColor="#3c495e"
+     cols = "10% auto, 10%"
+     rows="100,200,*,10%"
+     margin="0"
+    >
+
+    <GridLayout 
+        row="0"
+        col="0" 
+        colsPan="3" 
+        cols="*" 
+        rows="*"  
+        backgroundColor="#3c495e"
+    >
+        <Label class="title" text="add new order"></Label>
+    </GridLayout >
+    <GridLayout 
+        row="2"
+        rows="60,60,60,60,60"
+        class="form"
+    >
+        <TextField hint="title" class="login-field" row="0"></TextField>
+        <TextField hint="address" class="login-field" row="1"></TextField>
+        <GridLayout row="2" rows="*">            
+            <PickerField hint="From" [items]="items"></PickerField>
+
+        </GridLayout>
+        <GridLayout row="3" rows="*">       
+            <PickerField hint="to" [items]="items"></PickerField>
+        </GridLayout>
+
+        <GridLayout row="4">
+            <Button text="send" backgroundColor="#3c495e" color="orange"></Button>
+        </GridLayout>
+
+    </GridLayout >
+    <GridLayout class="avatar" col="1" row="1" columns="*" rows="*" >
+        <Image src="~/assets/images/cargo.png" backgroundColor="#ffffff" borderRadius="25%" width="50" height="50" ></Image>
+    </GridLayout>
+
+</GridLayout>

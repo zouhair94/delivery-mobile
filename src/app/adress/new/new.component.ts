@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Page } from '@nativescript/core'
-import { IAddress } from '../IAdress';
+import { IAddress } from '@/app/shared/models';
 import * as geocoding from '@nativescript-community/geocoding';
 import { registerElement } from "@nativescript/angular";
 import { Mapbox, MapboxViewApi, MapboxMarker } from '@nativescript-community/ui-mapbox';

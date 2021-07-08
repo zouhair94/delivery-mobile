@@ -3,10 +3,11 @@ import { NativeScriptCommonModule } from "@nativescript/angular";
 import { FloatingBtnComponent } from '@/app/shared/components/floating-btn/floating-btn.component'
 import {MenuComponent} from '@/app/shared/components/menu/menu.component'
 import {components} from '@/app/shared/components'
+import { NativeScriptPickerModule } from "@nativescript/picker/angular";
 
 
 @NgModule({
-    imports: [NativeScriptCommonModule],
+    imports: [NativeScriptCommonModule, NativeScriptPickerModule],
     exports: [
         components
     ],

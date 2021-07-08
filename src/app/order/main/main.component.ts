@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Page } from '@nativescript/core';
+
 
 @Component({
 	moduleId: module.id,
@@ -9,7 +11,9 @@ import { Component, OnInit } from '@angular/core';
 
 export class MainComponent implements OnInit {
 
-	constructor() { }
+	constructor(private page: Page) { }
 
-	ngOnInit() { }
+	ngOnInit() {
+		this.page.actionBarHidden = true
+	 }
 }

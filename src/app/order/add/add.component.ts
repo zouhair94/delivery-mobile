@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Page } from '@nativescript/core';
+import { IOrder } from '../../shared/models';
+
 
 @Component({
 	moduleId: module.id,
@@ -9,7 +12,25 @@ import { Component, OnInit } from '@angular/core';
 
 export class AddComponent implements OnInit {
 
-	constructor() { }
+	order: IOrder;
 
-	ngOnInit() { }
+	items = [
+		{id: 'loool' , title: "loool"},
+		{id: 'loool' , title: "loool"},
+		{id: 'loool' , title: "loool"},
+		{id: 'loool' , title: "loool"},
+		{id: 'loool' , title: "loool"},
+	]
+
+	constructor(private page: Page) { }
+
+	ngOnInit() {
+		this.page.actionBarHidden = true;
+		this.order = {
+			title: "",
+			description: "",
+			from: "",
+			to: ""
+		}
+	 }
 }
