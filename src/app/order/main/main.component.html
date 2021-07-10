@@ -1,7 +1,7 @@
 <GridLayout
     backgroundColor="#3c495e"
     cols = "10% auto, 10%"
-    rows="100,200,*,10%"
+    rows="100,250,*"
     margin="0"
 >
     <GridLayout row="0" col="1">
@@ -9,6 +9,7 @@
     </GridLayout>
     <GridLayout
         colspan="3"
+        rows="*,40"
         row="1"
     >
         <Mapbox
@@ -23,6 +24,25 @@
         disableScroll="false"
         disableTilt="false"
         (mapReady)="onMapReady($event)">
-    </Mapbox> 
+    </Mapbox>
+    <GridLayout class="separator" height="40" row="1"></GridLayout>  
+    </GridLayout>
+    <GridLayout row="2" rows="*" backgroundColor="orange">
+        <CardView class="cardStyle"  margin="15" elevation="40" radius="4">
+            <GridLayout class="form" rows="60,60,60,60,60,60,60" columns="80,*">
+                <Label text="status" row="0" col="0" class="infoTitle"></Label>
+                <Label text="active" row="0" col="1" class="infodesc"></Label>
+                <Label text="name" row="1" col="0" class="infoTitle"></Label>
+                <Label text="order 1" row="1" col="1" class="infodesc"></Label>
+                <Label text="description" row="2" col="0" class="infoTitle"></Label>
+                <Label text="description of order 1" row="2" col="1" class="infodesc"></Label>
+                <Label text="from" row="3" col="0" class="infoTitle"></Label>
+                <Label text="adress from" row="3" col="1" class="infodesc"></Label>
+                <Label text="to" row="4" col="0" class="infoTitle"></Label>
+                <Label text="to" row="4" col="1" class="infodesc"></Label>
+                <Label text="order number" row="5" col="0" class="infoTitle"></Label>
+            </GridLayout>
+        </CardView>
+        
     </GridLayout>
 </GridLayout>
